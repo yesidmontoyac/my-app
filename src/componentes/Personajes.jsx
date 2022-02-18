@@ -8,6 +8,7 @@ function Personajes() {
     const [personajes, setPersonajes] = useState ([]);
     useEffect(() => {
         async function request () {
+            // qotation marks in his way is to add a page inte final with ${pagina}
             const res = await axios.get(`https://rickandmortyapi.com/api/character/?page=${pagina}`)
             setPersonajes(res.data.results)
         }
