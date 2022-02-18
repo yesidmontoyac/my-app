@@ -23,7 +23,7 @@ const handleChange = (e) => {
 
 return (
     <div>
-        <input type="text" value={pagina} onChange={handleChange} placeholder="pagina"/>
+        <input type="text" value={pagina} onChange={handleChange} placeholder="Page number"/>
         <button onClick={handleClick}>Search</button>
         {personajes.length > 0 ? (
             personajes.map((personaje, index) => (
